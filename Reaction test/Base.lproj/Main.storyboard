@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reaction_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Play, wait for Stop button, tap it as fast as you can!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rv8-Ue-e4W">
+                                <rect key="frame" x="20" y="40" width="856" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4F-n3-8Dq">
+                                <rect key="frame" x="64" y="203" width="768" height="40"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.43921568630000002" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sfQ-aw-kFr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9z4-zw-Qwh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhe-9F-BQy">
+                                <rect key="frame" x="302.5" y="67.5" width="291" height="119"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6P-I6-3AS">
+                                <rect key="frame" x="64" y="253" width="768" height="120"/>
+                                <color key="backgroundColor" red="0.79215686269999996" green="1" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="8tp-kS-nF3">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="tintColor" red="0.36078431370000003" green="0.43921568630000002" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QgE-aA-2fS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rv8-Ue-e4W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="2jk-yU-Lcq">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n6P-I6-3AS" secondAttribute="bottom" constant="20" id="5Am-Ul-RAu"/>
+                            <constraint firstItem="rv8-Ue-e4W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="A3E-4d-mIw"/>
+                            <constraint firstItem="rv8-Ue-e4W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B0l-Fj-7rb"/>
+                            <constraint firstItem="Nhe-9F-BQy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HFG-MW-12W"/>
+                            <constraint firstItem="Nhe-9F-BQy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NvV-Pb-mGi">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-70"/>
+                            </constraint>
+                            <constraint firstItem="Nhe-9F-BQy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QWR-wv-R23"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n6P-I6-3AS" secondAttribute="trailing" constant="20" id="VCU-jj-d3d"/>
+                            <constraint firstItem="Nhe-9F-BQy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d9p-Rs-PFY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F4F-n3-8Dq" secondAttribute="bottom" constant="200" id="gHw-Yv-cMI">
+                                <variation key="heightClass=compact-widthClass=compact" constant="110"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="Nhe-9F-BQy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gsV-BO-SlZ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-50"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-80"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F4F-n3-8Dq" secondAttribute="trailing" constant="20" id="mZ5-ay-CkX"/>
+                            <constraint firstItem="n6P-I6-3AS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pYF-8r-pgr"/>
+                            <constraint firstItem="F4F-n3-8Dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wkL-Zh-HTQ"/>
+                            <constraint firstAttribute="trailing" secondItem="rv8-Ue-e4W" secondAttribute="trailing" constant="20" id="z5T-aq-d4z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NvV-Pb-mGi"/>
+                                <exclude reference="QWR-wv-R23"/>
+                                <exclude reference="d9p-Rs-PFY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="NvV-Pb-mGi"/>
+                                <include reference="d9p-Rs-PFY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="instructionLabel" destination="rv8-Ue-e4W" id="A0a-E3-rCQ"/>
+                        <outlet property="playButton" destination="F4F-n3-8Dq" id="PwE-61-tEF"/>
+                        <outlet property="stopButton" destination="n6P-I6-3AS" id="joj-s8-7P6"/>
+                        <outlet property="timerLabel" destination="Nhe-9F-BQy" id="89Z-Y1-Xdw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
